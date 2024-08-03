@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Social_meadia/static/css/main.05b7a926.css",
+    "main.js": "/Social_meadia/static/js/main.6203c342.js",
+    "index.html": "/Social_meadia/index.html",
+    "main.05b7a926.css.map": "/Social_meadia/static/css/main.05b7a926.css.map",
+    "main.6203c342.js.map": "/Social_meadia/static/js/main.6203c342.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05b7a926.css",
+    "static/js/main.6203c342.js"
+  ]
+}
