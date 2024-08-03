@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { fetchPosts } from './redux/actions';
+import Home from './components/Home';
+import ItemDetail from './components/ItemDetail';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchPosts());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <h3>Social Meadia App</h3>
+      <hr></hr>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/item/:id" element={<ItemDetail />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

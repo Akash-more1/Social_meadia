@@ -1,0 +1,34 @@
+ *{
+    background-color: black;
+    color: white;
+ }
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    color:  rgba(255, 255, 255, 0.5);
+    ;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h2, .card p {
+    margin: 10px 0;
+  }
+  
+  .detail {
+    padding: 20px;
+  }
+  
